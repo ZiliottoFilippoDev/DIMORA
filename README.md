@@ -17,7 +17,7 @@ To import the dataset examples:
 Bass model usage example
 `DBdimora$iPhone[7:52]`
 
-`model <- BM(data, display=T,oos=10)`
+`model <- BM(data, display=T)`
 
 `plot(model, type = 'all', oos = 20)`
 
