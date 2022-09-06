@@ -28,7 +28,7 @@ model <- BM(data, display=T)
 plot(model, type = 'all', oos = 20)
 ```
 
-![Plot example](https://raw.githubusercontent.com/Descent098/ezcv/master/.github/logo.png)
+![Plot example](Rplot.png)
 
 ## References
 Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edition. John Wiley & Sons Ltd.
