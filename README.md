@@ -15,7 +15,7 @@ To import the dataset examples:
 
 Or cloning the Github repository
 
-$ git clone https://github.com/ZiliotoFilippoDev/DIMORA 
+$ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git
 
 ## Usage
 Bass model usage example
