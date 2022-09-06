@@ -8,8 +8,8 @@ The implemented methods are: `Standard Bass model`, `Generalized Bass model` (wi
 ## Import
 ```bash
 install.packages('DIMORA') 
-
-library(DIMORA)```
+library(DIMORA)
+```
 
 To import the dataset examples: 
 `data(DBdimora)`
