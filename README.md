@@ -25,4 +25,5 @@ Bass model usage example
 
 ## References
 Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edition. John Wiley & Sons Ltd.
+
 [CRAN package](https://CRAN.R-project.org/package=DIMORA])
