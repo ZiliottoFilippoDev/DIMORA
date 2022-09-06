@@ -13,7 +13,7 @@ The implemented methods are: `Standard Bass model`, `Generalized Bass model` (wi
 To import the dataset examples: 
 `data(DBdimora)`
 
-## Example
+## Usage
 Bass model usage example
 
 `data <- DBdimora$iPhone[7:52]`
