@@ -12,10 +12,11 @@ install.packages('DIMORA')
 library(DIMORA)
 ```
 
-Or cloning the Github repository
+Or cloning the Github repository to access files
 
 ```bash
 $ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git
+$ cd R
 ```
 
 ## Usage
