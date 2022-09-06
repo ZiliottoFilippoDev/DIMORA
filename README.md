@@ -1,5 +1,5 @@
 # DIMORA
-R library for diffusion model statistical analysis.
+R library for diffusion model analysis.
 
 ## Contents
 
