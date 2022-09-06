@@ -50,6 +50,7 @@ plot(model, type = 'all', oos = 20)
 ## References
 Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edition. John Wiley & Sons Ltd.
 
+[Documentation](https://www.rdocumentation.org/packages/DIMORA/versions/0.3.0)
 [CRAN package](https://CRAN.R-project.org/package=DIMORA)
 
 
