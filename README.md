@@ -53,7 +53,7 @@ Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edi
 [CRAN package](https://CRAN.R-project.org/package=DIMORA)
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/ZiliottoFilippoDev/DIMORA.svg?style=for-the-badge
 [contributors-url]: https://github.com/ZiliottoFilippoDev/DIMORA/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ZiliottoFilippoDev/DIMORA.svg?style=for-the-badge
 [forks-url]: https://github.com/ZiliottoFilippoDev/DIMORA/network/members
