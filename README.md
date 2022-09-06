@@ -22,6 +22,7 @@ $ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git
 Bass model usage example
 
 ```R
+data(DBdimora)
 data <- DBdimora$iPhone[7:52]
 model <- BM(data, display=T)
 plot(model, type = 'all', oos = 20)
