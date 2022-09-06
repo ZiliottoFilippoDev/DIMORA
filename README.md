@@ -58,6 +58,14 @@ plot(model, type = 'all', oos = 20)
 
 ![Plot example](Rplot.png)
 
+## License
+Distributed under the `GPL-3.0` License. See `LICENSE.md` for more information.
+
+## Contact
+svandrea97@gmail.com
+
+filippo.ziliotto1996@gmail.com
+
 ## References
 Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edition. John Wiley & Sons Ltd.
 
