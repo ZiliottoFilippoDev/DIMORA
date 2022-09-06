@@ -7,6 +7,7 @@ The implemented methods are: `Standard Bass model`, `Generalized Bass model` (wi
 
 ## Import
 `install.packages('DIMORA') 
+
 library(DIMORA)`
 
 To import the dataset examples: 
@@ -14,7 +15,7 @@ To import the dataset examples:
 
 Or cloning the Github repository
 
-$ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git
+`$ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git`
 
 ## Usage
 Bass model usage example
