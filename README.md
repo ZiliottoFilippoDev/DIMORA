@@ -9,3 +9,6 @@ The implemented methods are: `Standard Bass model`, `Generalized Bass model` (wi
 `install.packages('DIMORA')` 
 
 `library(DIMORA)`
+
+To import the dataset examples
+`data(DBdimora)`
