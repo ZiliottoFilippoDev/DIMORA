@@ -12,3 +12,15 @@ The implemented methods are: `Standard Bass model`, `Generalized Bass model` (wi
 
 To import the dataset examples: 
 `data(DBdimora)`
+
+## Example
+Bass model usage example
+`DBdimora$iPhone[7:52]`
+
+`model <- BM(data, display=T,oos=10)`
+
+`plot(model, type = 'all', oos = 20)`
+
+
+## References
+"Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edition. John Wiley & Sons Ltd."
