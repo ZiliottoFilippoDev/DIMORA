@@ -1,5 +1,5 @@
 # DIMORA
-R package for diffusion model statistical analysis
+R library for diffusion model statistical analysis.
 
 ## Contents
 
@@ -10,5 +10,5 @@ The implemented methods are: `Standard Bass model`, `Generalized Bass model` (wi
 
 `library(DIMORA)`
 
-To import the dataset examples
+To import the dataset examples: 
 `data(DBdimora)`
