@@ -13,17 +13,18 @@ library(DIMORA)
 
 Or cloning the Github repository
 
-`$ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git`
+```bash
+$ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git
+```
 
 ## Usage
 Bass model usage example
 
-`data <- DBdimora$iPhone[7:52]`
-
-`model <- BM(data, display=T)`
-
-`plot(model, type = 'all', oos = 20)`
-
+```R
+data <- DBdimora$iPhone[7:52]
+model <- BM(data, display=T)
+plot(model, type = 'all', oos = 20)
+```
 
 ## References
 Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edition. John Wiley & Sons Ltd.
