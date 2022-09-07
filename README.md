@@ -22,7 +22,7 @@ R library for diffusion model analysis. `DIMORA` (**DI**ffusion **MO**dels **R**
 
 The implemented methods are: `Standard Bass model`, `Generalized Bass model` (with rectangular shock, exponential shock, and mixed shock. You can choose to add from 1 to 3 shocks), `Guseo-Guidolin model` and Variable Potential Market model, and `UCRCD model`. The Bass model consists of a simple differential equation that describes the process of how new products get adopted in a population, the Generalized Bass model is a generalization of the Bass model in which there is a "carrier" function x(t) that allows to change the speed of time sliding. In some real processes the reachable potential of the resource available in a temporal instant may appear to be not constant over time, because of this we use Variable Potential Market model, in which the Guseo-Guidolin has a particular specification for the market function. The UCRCD model (Unbalanced Competition and Regime Change Diachronic) is a diffusion model used to capture the dynamics of the competitive or collaborative transition.
 
-[![Contributors][contributors-shield]][contributors-url]
+![Views](https://gpvc.arturio.dev/ZiliottoFilippoDev)
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -81,7 +81,7 @@ Guidolin, M. (2023). Innovation Diffusion Models: Theory and Practice, First Edi
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/ZiliottoFilippoDev/DIMORA.svg?style=for-the-badge
-[contributors-url]: https://github.com/ZiliottoFilippoDev/DIMORA/graphs/contributors
+[contributors-url]: https://github.com/ZiliottoFilippoDev/DIMORA/graphs/traffic
 [forks-shield]: https://img.shields.io/github/forks/ZiliottoFilippoDev/DIMORA.svg?style=for-the-badge
 [forks-url]: https://github.com/ZiliottoFilippoDev/DIMORA/network/members
 [stars-shield]: https://img.shields.io/github/stars/ZiliottoFilippoDev/DIMORA.svg?style=for-the-badge
