@@ -50,6 +50,7 @@ Or cloning the Github repository to access files
 
 ```bash
 $ git clone https://github.com/ZiliottoFilippoDev/DIMORA.git
+$ cd DIMORA
 $ cd R
 ```
 
