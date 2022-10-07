@@ -96,10 +96,14 @@ plot.Dimora <- function(x,...,type=c('all','res','fit'), oos=0){
     min_ <- min(c(min(data1),min(data2)))
     max_ <- max(c(max(data1),max(data2)))
 
+
+    min_C <- min(c(min(data1_cum),min(data2_cum)))
+    max_C <- max(c(max(data1_cum),max(data2_cum)))
+
     if(type=='fit'){
       par(mfrow=c(1,2))
       plot(data1_cum,main="Cumulative",ylab='z(t)',xlab="t",cex.axis=.9,
-           type='b',pch=19,cex=0.6,...)
+           type='b',pch=19,cex=0.6, ylim=c(min_C,max_C),...)
       lines(estimates1_cum,lty=1,lwd=2,col='red')
       lines(c(zeros,estimates2_cum),lty=1,lwd=2,col='#5C2E91')
       points(c(zeros,data2_cum),main="Product 2",cex.axis=.9,col='green',
@@ -143,7 +147,7 @@ plot.Dimora <- function(x,...,type=c('all','res','fit'), oos=0){
       par(mfrow=c(3,2))
 
       plot(data1_cum,main="Cumulative",ylab='z(t)',xlab="t",cex.axis=.9,
-           type='b',pch=19,cex=0.6,...)
+           type='b',pch=19,cex=0.6, ylim=c(min_C,max_C),...)
       lines(estimates1_cum,lty=1,lwd=2,col='red')
       lines(c(zeros,estimates2_cum),lty=1,lwd=2,col='#5C2E91')
       points(c(zeros,data2_cum),ylab='',xlab="",col='green',
