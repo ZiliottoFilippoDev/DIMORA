@@ -1,8 +1,8 @@
 Package: DIMORA
-Date: 2022-09-05
+Date: 2023-01-14
 Type: Package
 Title: Diffusion Models R Analysis
-Version: 0.3.1
+Version: 0.3.3
 Author: Zanghi Federico, Savio Andrea, Filippo Ziliotto
 Depends: R (>= 3.2.1), minpack.lm, numDeriv, stats, forecast, reshape2, deSolve
 Maintainer: Savio Andrea <svandr97@gmail.com>

@@ -4,7 +4,7 @@
 \description{The main functions of the package are \code{BM, GBM, GGM}, and \code{UCRCD}. See the full documentation for more details.
 At the end of this page there are links to the functions.
 
-Note 1: the names of the model functions have been change! \code{BM} refers to the previous \code{BASS.standard}, \code{GMB} to the \code{BASS.generalized}, and \code{GGM} to the \code{GG.model}.
+Note 1: the names of the model functions have been changed! \code{BM} refers to the previous \code{BASS.standard}, \code{GMB} to the \code{BASS.generalized}, and \code{GGM} to the \code{GG.model}.
 
 Note 2: the SARMAX.refinement has been deleted from the previous version. Function \code{Arima()} of the  \code{forecast} library works to implement the SARMAX refinement.
 
