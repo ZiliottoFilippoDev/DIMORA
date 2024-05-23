@@ -17,7 +17,7 @@
 
 
 # DIMORA
-R library for diffusion model analysis. `DIMORA` (**DI**ffusion **MO**dels **R** **A**nalysis) is a statistical package that allows the analysis of diffusion data using different models, among the most used and useful. The need for this package arises from the lack of a similar tool in R, the idea is therefore to provide a platform that allows the most in-depth analysis of the diffusion data.  ```Version 0.3.0```
+R library for diffusion model analysis. `DIMORA` (**DI**ffusion **MO**dels **R** **A**nalysis) is a statistical package that allows the analysis of diffusion data using different models, among the most used and useful. The need for this package arises from the lack of a similar tool in R, the idea is therefore to provide a platform that allows the most in-depth analysis of the diffusion data.  ```Version 0.3.3```
 
 <!-- The visitors badge is not working, TODO we will have to fix this (probably github has taken down this service for good). Fow now wee have a fake visitors badge -->
 <!-- ![Badge](https://visitor-counter-badge.vercel.app/api/asheeeshh/visitor-counter-badge/) THIS IS THE ORIGINAL DIMORA ONE -->
