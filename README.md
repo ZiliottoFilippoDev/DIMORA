@@ -71,6 +71,9 @@ plot(model, type = 'all', oos = 20)
 ## License
 Distributed under the `GPL-3.0` License. See `LICENSE.md` for more information.
 
+## Any Issue or Bug? Please let us Know!
+Create a new issue in the appropriate GitHub section, so we will be able to verify and correct all the material :)
+
 ## Contact
 svandrea97@gmail.com
 
