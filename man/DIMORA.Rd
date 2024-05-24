@@ -14,21 +14,30 @@ Note 3: there is a new DIMORA dataset (DBdimora) which refers to the examples re
 \author{
  \itemize{
 
-   \item{Zanghi Federico: }{\email{federico.zanghi.11@gmail.com}
+    \item{Zanghi Federico: }{\email{federico.zanghi.11@gmail.com}
     \itemize{
         \item{\url{https://www.linkedin.com/in/federico-zanghi-75512b165/}}
         \item{\url{https://github.com/federicozanghi}}
               }}
-   \item{Savio Andrea: }{\email{svandr97@gmail.com}
+
+    \item{Savio Andrea: }{\email{svandr97@gmail.com}
     \itemize{
        \item{\url{https://www.linkedin.com/in/andrea-savio-51861b191/}}
              }}
+
    \item{Ziliotto Filippo: }{\email{filippo.ziliotto1996@gmail.com}
     \itemize{
         \item{\url{https://www.linkedin.com/in/FilippoZiliottoDev/}}
               }}
+
+   \item{Bessi Alessandro: }{\email{alessandrobessi92@gmail.com}
+    \itemize{
+        \item{\url{https://www.linkedin.com/in/alessandro-bessi-419812194/}}
+              }}
    }
 }
+
+
 
 
 \seealso{
