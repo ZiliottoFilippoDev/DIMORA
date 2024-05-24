@@ -1,19 +1,22 @@
 UCRCD = function(series1,
-                     series2,
-                     display = T,
-                     alpha = 0.05,
-                     delta = 0.01,
-                     gamma = 0.01,
-                     par = "double",
-                     m1  = BM(series1, display = F)$Estimate[1, 1],
-                     m2  = BM(series2, display = F)$Estimate[1, 1],
-                     p1c = BM(series1, display = F)$Estimate[2, 1],
-                     q1c = BM(series1, display = F)$Estimate[3, 1],
-                     p2  = BM(series2, display = F)$Estimate[2, 1],
-                     q2  = BM(series2, display = F)$Estimate[3, 1])
+                      series2,
+                      display = T,
+                      alpha = 0.05,
+                      delta = 0.01,
+                      gamma = 0.01,
+                      par = "double",
+                      m1  = BM(series1, display = F)$Estimate[1, 1],
+                      m2  = BM(series2, display = F)$Estimate[1, 1],
+                      p1c = BM(series1, display = F)$Estimate[2, 1],
+                      q1c = BM(series1, display = F)$Estimate[3, 1],
+                      p2  = BM(series2, display = F)$Estimate[2, 1],
+                      q2  = BM(series2, display = F)$Estimate[3, 1])
 {
+
   c2i <- length(series1) - length(series2)
   c2 = c2i + 1
+
+  m1s <- m1
 
   tot <- c(series1, series2)
   data1 <- cumsum(series1)
@@ -24,6 +27,9 @@ UCRCD = function(series1,
     step <- c2i
     s1 <- series1[1:step]
     series1 <- series1[(c2):end]
+
+    m1s <- BM(series1, display = F)$Estimate[1, 1]
+
     t <- c(1:step)
     s2 <- c(rep(0, step))
     Z1 <- cumsum(s1)
@@ -56,7 +62,7 @@ UCRCD = function(series1,
 
   if (par == "unique") {
     parms <- list(
-      mc = (m1 + m2) * 2,
+      mc = (m1s + m2) * 2,
       p1c = p1c,
       p2 = p2,
       q1c = q1c,
@@ -66,7 +72,7 @@ UCRCD = function(series1,
 
     t <- seq(c2, end, by = 1)
 
-    Z1 <- cumsum(series1)
+    Z1 <- data1[(c2):end]
     Z2 <- cumsum(series2)
     data <- matrix()
     data <- cbind(t, series1, series2, Z1, Z2)
@@ -214,7 +220,7 @@ UCRCD = function(series1,
 
   if (par == "double") {
     parms <- list(
-      mc = (m1 + m2) * 2,
+      mc = (m1s + m2) * 2,
       p1c = p1c,
       p2 = p2,
       q1c = q1c,
@@ -225,7 +231,7 @@ UCRCD = function(series1,
 
     t <- seq(c2, end, by = 1)
 
-    Z1 <- cumsum(series1)
+    Z1 <- data1[(c2):end]
     Z2 <- cumsum(series2)
     data <- matrix()
     data <- cbind(t, series1, series2, Z1, Z2)
@@ -373,30 +379,13 @@ UCRCD = function(series1,
 
   ################################################
 
-  if (c2i > 0) {
-    data <-
-      list(obs$consumption[1:end], obs$consumption[(end + c2):(2 * end)])
-    fitted <-
-      list(pred$consumption[1:end], pred$consumption[(end + c2):(2 * end)])
-    residu <- list(obs$consumption[1:end] - pred$consumption[1:end],
-                   obs$consumption[(end + c2):(2 * end)] - pred$consumption[(end +
-                                                                               c2):(2 * end)])
-  }
-
-  if (c2i == 0) {
-    data <-
-      list(obs$consumption[1:end], obs$consumption[(end + c2):(2 * end)])
-    fitted <-
-      list(pred$consumption[1:end], pred$consumption[(end + c2):(2 * end)])
-    residu <- list(obs$consumption[1:end] - pred$consumption[1:end],
-                   obs$consumption[(end + c2):(2 * end)] - pred$consumption[(end +
-                                                                               c2):(2 * end)])
-
-  }
-
-  tss <- sum((obs$consumption - mean(obs$consumption)) ^ 2)
-  rss <- sum((obs$consumption - pred$consumption) ^ 2)
-  r.squared <- 1 - rss / tss
+  data <-
+    list(obs$consumption[1:end], obs$consumption[(end + c2):(2 * end)])
+  fitted <-
+    list(pred$consumption[1:end], pred$consumption[(end + c2):(2 * end)])
+  residu <- list(obs$consumption[1:end] - pred$consumption[1:end],
+                 obs$consumption[(end + c2):(2 * end)] - pred$consumption[(end +
+                                                                             c2):(2 * end)])
 
   ss1 <- obs$consumption[1:end]
   ss2 <- obs$consumption[(end + c2):(2 * end)]
@@ -411,6 +400,14 @@ UCRCD = function(series1,
   FITTED <- list(gg1, gg2)
   DATA <- list(cc1, cc2)
   RESIDUALS <- list(gg1 - cc1, gg2 - cc2)
+
+
+  OBS <- c(ss1, ss2)
+  PRED <- c(pp1,pp2)
+  tss <- sum((OBS - mean(OBS)) ^ 2)
+  rss <- sum((OBS - PRED) ^ 2)
+  r.squared <- 1 - rss / tss
+
 
   t <- c(1:end)
   t2 <- c(c2:end)
@@ -512,3 +509,4 @@ UCRCD = function(series1,
   class(ao) <- "Dimora"
   invisible(ao)
 }
+
